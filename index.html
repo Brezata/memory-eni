@@ -4,46 +4,32 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Memory</title>
-      <link rel="stylesheet" href="style.css" />
+      
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-      -->
+      
+      <link rel="stylesheet" href="style.css" />
   </head>
   <body>
 
     <!-- Accueil Section -->
     <section id="title">
-      <h1><span class="eni">ENI</span> - <span>MEMORY</span> - <span>Accueil</span></h1>
+      <h1><span class="eni">ENI</span> - <span class="memory">MEMORY</span> - <span class="accueil">Accueil</span></h1>
     </section>
       
     <br>
     <br>
 
-    <section id="sectionNav">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link_accueil" href="#div1">Accueil</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link_inscription" href="#div2">S'inscrire</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link_connection" href="#div3">Se connecter</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link_profil" href="#div4">Profil</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link_jouer" href="#div5">Jouer</a>
-        </li>
-
+    <nav id='menu'>
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a href='http://'>Accueil</a></li>
+        <li><a href='http://'>S'inscrire</a></li>
+        <li><a href='http://'>Se connecter</a></li>
+        <li><a href='http://'>Profil</a></li>
+        <li><a href='http://'>Jouer</a></li>
+        
       </ul>
-    </section> 
+    </nav>
       
     <br>
     <br>
@@ -51,20 +37,37 @@
     <section class="sectionRules">
       <fieldset>
         <div class="textAccueil">
-                <p class="p1">Bienvenue sur le site de Memory de l'ENI.</p>
-                <p class="p1">Venez jouer avec nous et faites le meilleur score possible</p>
-            
-              <div class="p1">Regles du jeu :
-              
-                <li>
-                    <p class="pointAccueil">Retournez deux cartes. Si les images sont identiques, le jeu laisse les cartes <br>visilbles.</br></p>
-                    <p class="pointAccueil2">Si les images sont differentes, les cartes se retournent faces cachée là ou elles <br>étaient.</br></p>
-                </li>
-              
-              </div>
+          <p>
+            <br>
+          Bienvenue sur le site du Memory de l'ENI.<br>
+          Venez jouez avec nous et faite le meilleur score possible.
+            <br>
+            <br>
+            <B>  Règle du jeu :</B>
+            <br>
+            <ul>
+              <li> retournez 2 cartes. Si les images sont identiques, le jeu
+                laisse les cartes <br>visibles.<br>
+              </li>
+              <li> Si les images sont différentes, les cartes se retournent faces cachées là où elles <br>étaients<br></li>
+              <li> La partie est terminée lorsque toutes les cartes ont été assemblées par paires</li>
+            </ul>
+          </p>
+          <img
+          id="imageLegume"
+          src="resource/memory_detail.jpg"
+          width="250px"
+          alt="logo_small"
+          title="logo_small"/>
+
+          <p><br>Si vous voulez vous souvenir de votr score. Inscrivez-vous via le formulaire.<br>
+            Le jeu garde les <b>5 meilleurs</b> score.<br>
+            Si vous voulez relancer une partie, cliquez sur  <b>la barre espace</b>.
         </div>
+       
       </fieldset>  
     </section>
+  
 
   </body>
 

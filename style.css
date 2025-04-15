@@ -1,83 +1,247 @@
-
 body {
   height: 100vh;
-  background: linear-gradient(
-    145deg, /* angle en diagonale bas gauche → haut droit */
-    rgb(184, 243, 116) 20%, /* vert descend plus bas à gauche */
-    rgb(83, 67, 173) 80%    /* mauve remonte plus tôt à droite */
-  );
+  background: linear-gradient(145deg,
+      /* angle en diagonale bas gauche → haut droit */
+      rgb(184, 243, 116) 20%,
+      /* vert descend plus bas à gauche */
+      rgb(83, 67, 173) 80%
+      /* mauve remonte plus tôt à droite */
+    );
 }
 
-h1{
+h1 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
-  padding-bottom: 2%;
+  margin-left: 20%;
   color: rgb(243, 243, 243);
-  font-size: 2.5rem;
+  font-size: 70px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
-.nav {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border-color: white;
-  border: 1px solid white;
-  list-style-type: none; 
-  display: flex;         
-  justify-content: space-between;
-  background-color: rgb(63, 59, 59); 
-  padding: 15px ;
-  margin: 0;
-   margin-right: 50%;
-    
+span :hover {
+  background-color: black;
 }
-  
 
- 
-  .nav-item a {
-    color: white;           
-    text-decoration: none;  
-    font-size: 15px;
-    transition: color 0.3s ease;
-  }
-  
-  
-  .nav-item a:hover {
-    color: white; 
-  }
+.eni {
+  font-size: larger;
+  font-weight: 200;
+}
 
-  .pointAccueil {
-    list-style-type: disc;
-    
-  }
+.memory {
+  font-size: larger;
+}
 
-  .pointAccueil2 {
-    list-style-type: disc;
-    
-  }
+.accueil {
+  font-size: larger;
+  font-weight: 200;
+}
 
 
-  fieldset {
+.nav li:hover {
+  background-color: pink;
+}
+
+
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+
+.pointAccueil {
+  list-style-type: disc;
+
+}
+
+.pointAccueil2 {
+  list-style-type: disc;
+
+}
+
+
+fieldset {
+  margin-top: -50px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border: 1px solid rgb(83, 67, 173);  
-  background-color: black; 
+  border: 1px solid rgb(83, 67, 173);
+  background-color: rgb(63, 59, 59);
   display: flex;
   justify-content: center;
   border-radius: 20px;
-  
 
+}
+
+
+.textAccueil {
+  color: rgb(243, 243, 243);
+  margin-left: 2px;
 }
 
 .p1 {
-    color: white;
+  
+  color: white;
 }
 
-.sectionRules{
- 
+.sectionRules {
+
   padding: 1%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: 50px; 
-  
+  margin-bottom: 50px;
+
+}
+
+#imageLegume {
+  margin-left: 170px;
+
+}
+
+
+
+
+.menu-bar {
+  background-color: #1988f7;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.item {
+  color: white;
+  background-color: transparent;
+  font-size: 18px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 14px 20px;
+}
+
+.item.title {
+  font-weight: 600;
+}
+
+.item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+#menu {
+  width: 50%;
+  background: rgb(63, 59, 59);
+  height: 45px;
+
+  margin: 10px;
+  margin-top: -50px;
+}
+
+#menu ul, #menu li {
+
+  padding: 0;
+  list-style: none
+}
+
+
+#menu li {
+  display: inline-block;
+  position: relative;
+}
+
+#menu a {
+  display: block;
+  line-height: 45px;
+  padding: 0 14px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+
+#menu li a:hover {
+  color: white;
+  background: black;
+}
+
+#menu input {
+  display: none;
+  margin: 0;
+  padding: 0;
+  height: 45px;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer
+}
+
+#menu label {
+  display: none;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 35px
+}
+
+
+
+#menu ul.sub-menus li {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  #menu {
+    position: relative
+  }
+
+  #menu ul {
+    background: #444444;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    height: auto;
+    display: none;
+    text-align: left;
+  }
+
+  #menu li {
+    display: block;
+    float: none;
+    width: auto;
+  }
+
+  #menu input, #menu label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block
+  }
+
+  #menu input {
+    z-index: 4
+  }
+
+  #menu input:checked+label {
+    color: #FFFFFF
+  }
+
+  #menu input:checked+label:before {
+    content: "\00d7"
+  }
+
+  #menu input:checked~ul {
+    display: block
+  }
 }
